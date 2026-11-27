@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>ShopEase</h2>
+            <ul>
+                <li>Home</li>
+                <li>Products</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>🛒 Cart (<span id="cart-count">0</span>)</li>
+                <div class="cart-summary">
+    <h3>Shopping Cart</h3>
+    <p>Total Items: <span id="cart-count-display">0</span></p>
+    <p>Total Price: ₹<span id="cart-total">0</span></p>
+    <button id="clear-cart">Clear Cart</button>
+</div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Your Style</h1>
+        <p>Explore the latest products at amazing prices.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="products">
+        <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products...">
+</div>
+<div class="category-filter">
+    <button class="filter-btn active" data-category="all">All</button>
+    <button class="filter-btn" data-category="shoes">Shoes</button>
+    <button class="filter-btn" data-category="watch">Watches</button>
+    <button class="filter-btn" data-category="headphones">Electronics</button>
+</div>
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Shoes">
+                <h3>Running Shoes</h3>
+                <p>Comfortable everyday footwear.</p>
+                <h4>₹1,499</h4>
+                <button class="add-to-cart" data-price="1499">
+    Add to Cart
+</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400" alt="Watch">
+                <h3>Classic Watch</h3>
+                <p>Stylish watch for every occasion.</p>
+                <h4>₹999</h4>
+                <button class="add-to-cart" data-price="999">
+    Add to Cart
+</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>Enjoy music with clear sound.</p>
+                <h4>₹1,299</h4>
+                <button class="add-to-cart" data-price="1999">
+    Add to Cart
+</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 ShopEase | All Rights Reserved</p>
+    </footer>
+<script src="script.js"></script>
+<button id="back-to-top">⬆ Back to Top</button>
+</body>
+</html>
